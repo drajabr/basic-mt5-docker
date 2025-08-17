@@ -1,4 +1,4 @@
 
 .devcontainer/
 .env
-config/
+data/

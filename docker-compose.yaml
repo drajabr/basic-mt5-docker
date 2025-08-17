@@ -3,8 +3,9 @@ version: '3'
 services:
   mt5:
     build: .
-    image: gmag11/metatrader5_vnc
-    container_name: mt5
+    image: metatrader5:latest
+    container_name: metatrader5
+    hostname: metatrader5
     volumes:
       - ./data:/data
     ports:
