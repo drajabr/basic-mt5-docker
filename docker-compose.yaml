@@ -6,11 +6,11 @@ services:
     image: gmag11/metatrader5_vnc
     container_name: mt5
     volumes:
-      - ./config:/config
+      - ./data:/data
     ports:
       - 3000:3000
     environment:
-      UID=1000
-      GID=1000
-      CUSTOM_USER=username
-      PASSWORD=supersecure
+      - UID=1000
+      - GID=1000
+      - CUSTOM_USER=username
+      - PASSWORD=supersecure
